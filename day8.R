@@ -23,6 +23,7 @@ all_sums <- sapply(1:length(p1_data), function(y){
   
 })
 
+# Solution part 1
 sum(all_sums)
 
 
