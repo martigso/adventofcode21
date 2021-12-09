@@ -55,8 +55,8 @@ for(k in 1:length(data)){
   
   config <- vector("character", 7)
   
-  config[1] <- setdiff(tmp_3long,
-                       tmp_2long)
+  # Find the character map for this set
+  config[1] <- setdiff(tmp_3long, tmp_2long)
   config[3] <- unlist(sapply(tmp_6long, function(x) setdiff(tmp_2long, x)))
   tmp_6long <- tmp_6long[which(colSums(sapply(tmp_6long, function(x) x %in% tmp_2long)) == 2)]
   
